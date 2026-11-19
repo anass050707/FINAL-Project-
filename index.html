@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- W3 Validator Fix: Added Title element -->
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Assignment Requirement: Add onload event listener -->
+<body onload="addTabIndex()">
+
+    <h1>Accessible Photo Gallery</h1>
+    <!-- Validator Fix: Use h2 instead of h3 to not skip heading levels -->
+    <h2>Use your mouse or keyboard (Tab key) to explore</h2>
+
+    <!-- The main display area -->
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <div class="gallery">
+        <!-- Assignment Requirement: 6 images with alt text, onfocus, and onblur added -->
+        <img src="https://picsum.photos/id/1015/200/150" alt="Beautiful Mountain River" 
+             onmouseover="upDate(this)" onmouseout="undo()" 
+             onfocus="upDate(this)" onblur="undo()">
+             
+        <img src="https://picsum.photos/id/1016/200/150" alt="Canyon Landscape" 
+             onmouseover="upDate(this)" onmouseout="undo()" 
+             onfocus="upDate(this)" onblur="undo()">
+             
+        <img src="https://picsum.photos/id/1018/200/150" alt="Snowy Mountains" 
+             onmouseover="upDate(this)" onmouseout="undo()" 
+             onfocus="upDate(this)" onblur="undo()">
+             
+        <img src="https://picsum.photos/id/1019/200/150" alt="Forest Trees" 
+             onmouseover="upDate(this)" onmouseout="undo()" 
+             onfocus="upDate(this)" onblur="undo()">
+             
+        <img src="https://picsum.photos/id/1020/200/150" alt="Bear in the wild" 
+             onmouseover="upDate(this)" onmouseout="undo()" 
+             onfocus="upDate(this)" onblur="undo()">
+             
+        <img src="https://picsum.photos/id/1021/200/150" alt="Foggy Lake" 
+             onmouseover="upDate(this)" onmouseout="undo()" 
+             onfocus="upDate(this)" onblur="undo()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
